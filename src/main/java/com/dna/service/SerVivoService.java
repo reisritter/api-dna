@@ -29,7 +29,7 @@ public class SerVivoService {
 		}
 		
 		//Linha				
-		for(int i=0;i<linha-1;i++)
+		for(int i=0;i<linha;i++)
 		{					
 			//Coluna
 			for(int j=0;j<coluna-1;j++)
