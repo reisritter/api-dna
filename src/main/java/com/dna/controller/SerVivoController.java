@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
+import com.dna.model.Data;
 import com.dna.model.SerVivo;
 import com.dna.repository.ISerVivoRepository;
 import com.dna.service.SerVivoService;
@@ -44,7 +45,7 @@ public class SerVivoController {
 	}
 	
 	@GetMapping("/stats")
-	public String[] rate() 
+	public Data rate() 
 	{
 		return repo.rate();
 	}
